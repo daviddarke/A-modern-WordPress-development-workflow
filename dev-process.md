@@ -21,7 +21,7 @@ slidenumbers: true
 
 ---
 
-### Working on WordPress
+### Working with WordPress
 
 ![inline](assets/old-dev-process.pdf)
 
@@ -31,21 +31,18 @@ slidenumbers: true
 
 # [fit] What's wrong with this?
 
-* Almost impossible for two developer to work at the same time
+* Almost impossible for two developer to work at the same time, (unless they are sat next to each other)
 * Dropbox does have a revision system, but only on a per file basis
- * No real history
- * No way of restoring a
 * Deployments were cumbersome and not traceable
 * No real control over servers and hosting
 * Nothing was re-usable
+* Hours wasted handling development environment differences
 
 ---
 
 [.build-lists: true]
 
 ## X challenges
-
-#
 
 * Shared development environment
 * Get a reliable deployment method
@@ -94,9 +91,14 @@ slidenumbers: true
 
 ---
 
-![inline](assets/repo-files.png)
+# Recap 3
+
+#ASTODO Only show database part
+
+![inline](assets/anatomy_of_wordpress.pdf)
 
 ---
+
 
 ## We started using shared remote databases
 ##  **mysql.mycompany.co.uk**
@@ -141,13 +143,54 @@ An S3 bucket per site, which is only accessible to the development team
 
 ---
 
+![inline](assets/repo-files.png)
 
-![inline](assets/vagrant_homestead.pdf)
+We need a way of getting WordPress
+
+---
+
+![inline](assets/composer.pdf)
+
+Composer pulls which even WordPress version is required (usually the latest) and all required plugins.
+# [fit] https://www.atomicsmash.co.uk/blog/using-composer-wordpress-development/
+
+---
+
+# Premium plugins
+
+We use an private composer storage solution called Release Belt.
+
+https://github.com/Rarst/release-belt
+
+---
+
+![fit](assets/release-belt.png)
+
+
+---
+
+# Signup for logsmith
+
+We are looking for beta testers
+
+http://eepurl.com/dkjmHb
+
+---
+
+![fll](assets/logsmith-signup2.png)
 
 
 
+---
 
+# Tools list
 
+* GIT | A version control system for storing and sharing code.
+* Composer | Used to pulling PHP dependancies like Wordpress.
+* Release belt | Used for storing premium plugins and making them privately accessible to composer.
+* Forge | Used for provisioning servers
+* Logflume | Gets uploads onto S3 so they are sharable with other developers
+* Logsmith | The development framework made by Atomic Smash
 
 ---
 
