@@ -9,13 +9,13 @@ slidenumbers: true
 
 ---
 
-## 8 years ago
+## September 2010
 
 ![original](assets/spike-island.jpg)
 
 ---
 
-## Today
+## Today (April 2018)
 
 ![original](assets/unit-1-15.jpg)
 
@@ -28,25 +28,24 @@ slidenumbers: true
 ---
 
 [.build-lists: true]
+[.autoscale: true]
 
 # [fit] What's wrong with this?
 
-* Almost impossible for two developer to work at the same time, (unless they are sat next to each other)
+* It's almost impossible for two developer to work at the same time, (unless they are sat next to each other)
 * Dropbox does have a revision system, but only on a per file basis
-* Deployments were cumbersome and not traceable
-* No real control over servers and hosting
+* Deployments were cumbersome and not traceable (FTP is the worst)
+* No real control over servers and hosting (Shared hosting)
 * Nothing was re-usable
-* Hours wasted handling development environment differences
+* Hours wasted handling development environment differences and thing out of our control
 
 ---
 
-[.build-lists: true]
+## Our challenges
 
-## X challenges
-
-* Shared development environment
-* Get a reliable deployment method
-* Improve hosting
+* Shared development environment (reproducible)
+* Find a reliable deployment method
+* Improve hosting reliability, level of control and performance
 
 ---
 
@@ -54,7 +53,9 @@ slidenumbers: true
 
 ---
 
-# [fit] Our shared development environment
+# [fit] First, how do
+# [fit] we run WordPress sites
+# [fit] on our local machines?
 
 ---
 
@@ -64,14 +65,16 @@ slidenumbers: true
 
 ---
 
+![inline](assets/computer_inside_computer.gif)
+
+---
+
 ### Laravel Homestead
 
 > **Laravel Homestead is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, and any other server software on your local machine.**
-
-&
-
-> **No more worrying about messing up your operating system! Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!**
 -- Homestead documentation
+
+^ Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
 ---
 
@@ -97,6 +100,8 @@ slidenumbers: true
 ![inline](assets/git.pdf)
 
 ---
+[.autoscale: true]
+
 
 ### 'Please use git' - A blog by Amin Shah Gilani [^1]
 
@@ -201,7 +206,7 @@ http://eepurl.com/dkjmHb
 
 ---
 
-# [fit] THANKS! ☺️
+# THANKS!
 
 Follow me:
 @david_darke
@@ -213,15 +218,17 @@ Get presentation here:
 https://github.com/daviddarke/A-modern-WordPress-development-workflow
 
 ---
+[.autoscale: true]
 
-# Tools list
+### Tool list
 
-* GIT | A version control system for storing and sharing code.
-* Composer | Used to pulling PHP dependancies like Wordpress.
-* Release belt | Used for storing premium plugins and making them privately accessible to composer.
-* Forge | Used for provisioning servers
-* Logflume | Gets uploads onto S3 so they are sharable with other developers
-* Logsmith | The development framework made by Atomic Smash
+- Capistrano | Used to deploy code from GIT to servers.
+- Composer | Used to pulling PHP dependancies like Wordpress.
+- Forge | Used for provisioning servers
+- GIT | A version control system for storing and sharing code.
+- Logflume | Gets uploads onto S3 so they are sharable with other developers
+- Logsmith | The development framework made by Atomic Smash
+- Release belt | Used for storing premium plugins and making them privately accessible to composer.
 
 ---
 
