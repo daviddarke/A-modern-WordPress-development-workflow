@@ -58,6 +58,23 @@ slidenumbers: true
 
 ---
 
+### Laravel Homestead
+
+![inline](assets/vagrant_homestead.pdf)
+
+---
+
+### Laravel Homestead
+
+> **Laravel Homestead is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, and any other server software on your local machine.**
+
+&
+
+> **No more worrying about messing up your operating system! Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!**
+-- Homestead documentation
+
+---
+
 ### The anatomy of 99.9999% of WordPress Websites
 
 ![inline](assets/anatomy_of_wordpress.pdf)
@@ -98,7 +115,6 @@ slidenumbers: true
 ![inline](assets/anatomy_of_wordpress.pdf)
 
 ---
-
 
 ## We started using shared remote databases
 ##  **mysql.mycompany.co.uk**
@@ -177,20 +193,11 @@ http://eepurl.com/dkjmHb
 
 ---
 
-![fll](assets/logsmith-signup2.png)
-
-
+![fill](assets/logsmith-signup2.png)
 
 ---
 
-# Tools list
-
-* GIT | A version control system for storing and sharing code.
-* Composer | Used to pulling PHP dependancies like Wordpress.
-* Release belt | Used for storing premium plugins and making them privately accessible to composer.
-* Forge | Used for provisioning servers
-* Logflume | Gets uploads onto S3 so they are sharable with other developers
-* Logsmith | The development framework made by Atomic Smash
+![fill autoplay loop](assets/automation.mp4)
 
 ---
 
@@ -206,6 +213,18 @@ Get presentation here:
 https://github.com/daviddarke/A-modern-WordPress-development-workflow
 
 ---
+
+# Tools list
+
+* GIT | A version control system for storing and sharing code.
+* Composer | Used to pulling PHP dependancies like Wordpress.
+* Release belt | Used for storing premium plugins and making them privately accessible to composer.
+* Forge | Used for provisioning servers
+* Logflume | Gets uploads onto S3 so they are sharable with other developers
+* Logsmith | The development framework made by Atomic Smash
+
+---
+
 
 # [fit] Any questions? 🙋 🙋‍♂️
 
