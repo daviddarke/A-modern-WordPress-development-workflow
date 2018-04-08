@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="49px" viewBox="0 0 210 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Documentation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" fill="#003049">
+            <text id="logflume" font-family="F37Ginger-Bold, F37 Ginger" font-size="32" font-weight="bold" line-spacing="32">
+                <tspan x="78" y="48">logflume</tspan>
+            </text>
+            <g id="Group-2" transform="translate(0.000000, 0.500000)">
+                <path d="M68,35.18505 L68,39.66505 L64.265,41.54505 C64.175,41.59005 64.09,41.63455 64,41.67455 C59.725,43.77955 55.12,44.81505 50.54,44.81505 C44.31,44.81505 38.115,42.90005 32.835,39.12505 C30.605,37.53505 28.19,36.32505 25.675,35.50005 C25.62,35.48005 25.56,35.46005 25.5,35.44005 C19,33.36005 11.8445,33.85005 5.535,37.02505 L4,37.79955 L0,39.81505 L0,35.33505 L3.735,33.45505 C3.825,33.41005 3.91,33.36505 4,33.32505 C11.065,29.85005 19.025,29.27955 26.305,31.50005 C29.225,32.39005 32.035,33.72505 34.63,35.50005 C34.81,35.62505 34.99,35.75005 35.165,35.87505 C43.19,41.60505 53.6555,42.41005 62.465,37.97505 L64,37.20005 L68,35.18505 Z" id="Fill-1"></path>
+                <path d="M0,15.5 L0,39.815 L4,37.8 L4,19.5 L45.675,19.5 L49.675,15.5 L0,15.5 Z M55.33,15.5 L51.325,19.5 L64,19.5 L64,41.675 C64.09,41.635 64.175,41.59 64.265,41.545 L68,39.665 L68,15.5 L55.33,15.5 Z" id="Fill-4"></path>
+                <polygon id="Fill-6" points="2.5 27.5 25.5 27.5 25.5 23.5 2.5 23.5"></polygon>
+                <polygon id="Fill-8" points="29.5 27.5 66 27.5 66 23.5 29.5 23.5"></polygon>
+                <polygon id="Fill-9" points="25.5 35.5 50 35.5 50 31.5 25.5 31.5"></polygon>
+                <polygon id="Fill-10" points="54 35.5 67 35.5 67 31.5 54 31.5"></polygon>
+                <polygon id="Fill-11" points="59.51515 0 40.01515 19.5 45.67465 19.5 49.67465 15.5 59.51515 5.655 62.34465 8.485 55.33015 15.5 51.32515 19.5 56.98465 19.5 68.00015 8.485"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
