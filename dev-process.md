@@ -45,6 +45,7 @@ slidenumbers: true
 ## Our challenges
 
 * Shared development environment
+* Improve frontend workflow
 * Find a reliable deployment method
 * Improve hosting reliability, level of control and performance
 
@@ -170,7 +171,27 @@ https://github.com/Rarst/release-belt
 ## Our challenges
 
 * ~~Shared development environment~~ ✔
+* Improve frontend workflow
 * Find a reliable deployment method
+* Improve hosting reliability, level of control and performance
+
+---
+
+![original, 90%](assets/sass.pdf)
+
+---
+
+![original, 80%](assets/frontend-tech.pdf)
+
+More about frontend tools [^2]
+
+---
+
+## Our challenges
+
+* ~~Shared development environment~~ ✔
+* ~~Improve frontend workflow~~ ✔
+* Find a reliable deployment method ✔
 * Improve hosting reliability, level of control and performance
 
 ---
@@ -206,9 +227,35 @@ https://github.com/Rarst/release-belt
 ## Our challenges
 
 * ~~Shared development environment~~ ✔
+* ~~Improve frontend workflow~~ ✔
 * ~~Find a reliable deployment method~~ ✔
 * Improve hosting reliability, level of control and performance
 
+---
+
+# [fit] The hosting company
+
+![original, 120%](assets/digital-ocean.pdf)
+
+---
+
+# [fit] Hosting provisioning
+
+![original, 120%](assets/forge.pdf)
+
+---
+
+# Forge...
+
+1. Creates the server on Digital Ocean
+1. Installs Nginx, PHP, MySQL + a bunch of other stuff
+1. Helps automate Let's Encrypt SSLs
+1. Provides an interface for creating 'sites'
+1. Provides an interface for creating databases
+1. Patches the servers for security updates (in the background)
+1. Still full control over your server
+
+^ It's not a hosting cpanel
 
 ---
 
@@ -220,13 +267,11 @@ https://github.com/Rarst/release-belt
 
 ![inline](assets/delorean.gif)
 
-
 ---
 
 ### New dev process
 
 ![inline](assets/new-dev-process.pdf)
-
 
 ---
 
@@ -284,8 +329,6 @@ If you are downloading content to a development machine from a live site, make s
 
 ---
 
-
-# [fit] Any questions? 🙋 🙋‍♂️
-
-
 [^1]: https://hackernoon.com/please-use-git-da3bea7d1234
+
+[^2]: https://www.atomicsmash.co.uk/blog/our-current-development-tools-and-workflows/
