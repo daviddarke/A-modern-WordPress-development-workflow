@@ -71,13 +71,15 @@ slidenumbers: true
 
 ---
 
+#[fit] Think of your
+#[fit] Wordpress website,
+#[fit] as a **web platform**.
+
+---
+
 ### The anatomy of 99.9999% of WordPress Websites
 
 ![inline](assets/anatomy_of_wordpress.pdf)
-
-^
-* Think of your Wordpress website as a web application.
-* It's just a dependancy
 
 ---
 
@@ -181,7 +183,7 @@ Git repository doesn't include WordPress, plugins or uploads
 
 ---
 
-![original, 80%](assets/frontend-tech.pdf)
+![original, 60%](assets/frontend-tech.pdf)
 
 More about frontend tools [^3]
 
@@ -191,7 +193,7 @@ More about frontend tools [^3]
 
 * ~~Get a shared development environment~~ ✔
 * ~~Improve frontend workflow~~ ✔
-* Find a reliable deployment method ✔
+* Find a reliable deployment method
 * Improve hosting reliability
 
 ---
@@ -273,19 +275,10 @@ More about frontend tools [^3]
 
 ![inline](assets/new-dev-process.pdf)
 
----
-
-#[fit] Think of your
-#[fit] Wordpress website,
-#[fit] as a web application.
 
 ---
 
-#ASTODO add logos
-
-Logsmith
-
-Logflume
+![fit, 160%](assets/logsmith_logflume.pdf)
 
 ---
 
@@ -298,10 +291,6 @@ Logflume
 ---
 
 ![fill](assets/logsmith-signup2.png)
-
----
-
-You shouldn't need live content to build / test a website
 
 ---
 

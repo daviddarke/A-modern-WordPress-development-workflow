@@ -18,5 +18,5 @@ The talk involves an overview of some key technologies like Git, Capistrano and 
 
 Icons and logos from
 
-https://worldvectorlogo.com
-https://iconmonstr.com
+- https://worldvectorlogo.com
+- https://iconmonstr.com
