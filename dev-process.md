@@ -15,12 +15,6 @@ slidenumbers: true
 
 ---
 
-## Today (April 2018)
-
-![original](assets/unit-1-15.jpg)
-
----
-
 ### Working with WordPress
 
 ![inline](assets/old-dev-process.pdf)
@@ -30,7 +24,7 @@ slidenumbers: true
 [.build-lists: true]
 [.autoscale: true]
 
-# [fit] What's wrong with this?
+# [fit] What's wrong with this simple setup?
 
 * It's almost impossible for two developer to work at the same time, (unless they are sat next to each other)
 * Dropbox does have a revision system, but only on a per file basis
@@ -41,21 +35,18 @@ slidenumbers: true
 
 ---
 
+## Today (April 2018)
+
+![original](assets/atomic_now.jpg)
+
+
+---
+
 ## Our challenges
 
-* Shared development environment (reproducible)
+* Shared development environment
 * Find a reliable deployment method
 * Improve hosting reliability, level of control and performance
-
----
-
-![inline](assets/delorean.gif)
-
----
-
-# [fit] First, how do
-# [fit] we run WordPress sites
-# [fit] on our local machines?
 
 ---
 
@@ -84,12 +75,9 @@ slidenumbers: true
 
 #### What makes any WordPress site unique?
 
----
-
-### Think of your Wordpress website as a web application.
-### It's just a dependancy
-
-![inline](assets/anatomy_of_wordpress.pdf)
+^
+* Think of your Wordpress website as a web application.
+* It's just a dependancy
 
 ---
 
@@ -113,7 +101,7 @@ slidenumbers: true
 
 ---
 
-# Recap 3
+# Recap 2
 
 #ASTODO Only show database part
 
@@ -128,21 +116,9 @@ This means all our **development** databases are accessible from anywhere.
 
 ---
 
-### Think of your Wordpress website as a web application.
+# Recap 3
 
-You shouldn't need live content to build / test a website
-
----
-
-# GDPR
-
-If you are downloading content to a development machine from a live site, make sure you aren't pulling live user / customer data.
-
----
-
-# Recap 2
-
-#ASTODO make this the second version of the diagram
+#ASTODO only show uploads
 
 ![inline](assets/anatomy_of_wordpress.pdf)
 
@@ -156,7 +132,7 @@ An S3 bucket per site, which is only accessible to the development team
 
 ---
 
-# Recap 3
+# Recap 4
 
 #ASTODO Only show WordPress parts
 
@@ -164,16 +140,18 @@ An S3 bucket per site, which is only accessible to the development team
 
 ---
 
-![inline](assets/repo-files.png)
-
-We need a way of getting WordPress
-
----
-
 ![inline](assets/composer.pdf)
 
 Composer pulls which even WordPress version is required (usually the latest) and all required plugins.
 # [fit] https://www.atomicsmash.co.uk/blog/using-composer-wordpress-development/
+
+
+---
+
+![inline](assets/repo-files.png)
+
+Git repository is clean of WordPress, plugins and uploads
+
 
 ---
 
@@ -187,14 +165,76 @@ https://github.com/Rarst/release-belt
 
 ![fit](assets/release-belt.png)
 
+---
+
+## Our challenges
+
+* ~~Shared development environment~~ ✔
+* Find a reliable deployment method
+* Improve hosting reliability, level of control and performance
 
 ---
 
-# Signup for logsmith
+# Capistrano
 
-We are looking for beta testers
+![inline](assets/capistrano.pdf)
 
-http://eepurl.com/dkjmHb
+---
+
+## A single deployment
+
+1. **Developer** runs `cap production deploy`
+1. **Capistrano** logs into your remote server
+1. **Capistrano** grabs the latest code from Git
+1. **Capistrano** runs composer and pulls down WordPress
+1. If there are no errors in setup, **Capistrano** puts changes live
+
+---
+
+## `cap production deploy`
+## `cap uat deploy`
+## `cap staging deploy`
+
+---
+
+## `cap production deploy:rollback`
+
+![inline](assets/mind-blown.gif)
+
+---
+
+## Our challenges
+
+* ~~Shared development environment~~ ✔
+* ~~Find a reliable deployment method~~ ✔
+* Improve hosting reliability, level of control and performance
+
+
+---
+
+### Old dev process
+
+![inline](assets/old-dev-process.pdf)
+
+---
+
+![inline](assets/delorean.gif)
+
+
+---
+
+### New dev process
+
+![inline](assets/new-dev-process.pdf)
+
+
+---
+
+#[fit] Signup for logsmith
+
+#[fit] We are looking for beta testers
+
+#[fit] **http://eepurl.com/dkjmHb**
 
 ---
 
@@ -229,6 +269,18 @@ https://github.com/daviddarke/A-modern-WordPress-development-workflow
 - Logflume | Gets uploads onto S3 so they are sharable with other developers
 - Logsmith | The development framework made by Atomic Smash
 - Release belt | Used for storing premium plugins and making them privately accessible to composer.
+
+---
+
+### Think of your Wordpress website as a web application.
+
+You shouldn't need live content to build / test a website
+
+---
+
+# GDPR
+
+If you are downloading content to a development machine from a live site, make sure you aren't pulling live user / customer data.
 
 ---
 
