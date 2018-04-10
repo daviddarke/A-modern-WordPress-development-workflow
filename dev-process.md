@@ -1,7 +1,9 @@
 footer: A modern WordPress development workflow - David Darke | [atomicsmash.co.uk](https://www.atomicsmash.co.uk)
 slidenumbers: true
 
-# A modern WordPress development workflow
+# [fit] A modern WordPress
+# [fit] development workflow
+## By David Darke
 
 ---
 
@@ -15,7 +17,6 @@ slidenumbers: true
 
 ---
 
-### Working with WordPress
 
 ![inline](assets/old-dev-process.pdf)
 
@@ -31,7 +32,7 @@ slidenumbers: true
 * Deployments were cumbersome and not traceable (FTP is the worst)
 * No real control over servers and hosting (Shared hosting)
 * Nothing was re-usable
-* Hours wasted handling development environment differences and thing out of our control
+* Hours (maybe days) wasted handling development environment differences and things out of our control
 
 ---
 
@@ -44,10 +45,12 @@ slidenumbers: true
 
 ## Our challenges
 
-* Shared development environment
-* Improve frontend workflow
-* Find a reliable deployment method
-* Improve hosting reliability, level of control and performance
+* **Get a shared development environment** - Hoping to increase development team
+* **Improve frontend workflow** - Stop editing CSS files
+* **Find a reliable deployment method** - Stop f**king about with FTP
+* **Improve hosting reliability** - Increase level of control and performance
+
+^ Mention the time difference
 
 ---
 
@@ -57,14 +60,12 @@ slidenumbers: true
 
 ---
 
-![inline](assets/computer_inside_computer.gif)
-
----
-
 ### Laravel Homestead
 
 > **Laravel Homestead is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, and any other server software on your local machine.**
 -- Homestead documentation
+
+![inline](assets/computer_inside_computer.gif)
 
 ^ Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
@@ -74,25 +75,31 @@ slidenumbers: true
 
 ![inline](assets/anatomy_of_wordpress.pdf)
 
-#### What makes any WordPress site unique?
-
 ^
 * Think of your Wordpress website as a web application.
 * It's just a dependancy
 
 ---
 
-## Your theme and custom plugin code
+#ASTODO Only show theme part
 
-### Get your code into GIT... NOW
+![inline](assets/anatomy_of_wordpress.pdf)
 
-![inline](assets/git.pdf)
+---
+
+![inline, 180%](assets/git.pdf)
+
+
+---
+
+#[fit] Get your custom code into GIT...
+#[fit] NOW!!!
 
 ---
 [.autoscale: true]
 
 
-### 'Please use git' - A blog by Amin Shah Gilani [^1]
+### 'Please use git' - A post by Amin Shah Gilani [^1]
 
 * It’s too complicated
 * I’m not too good with the command line.
@@ -100,20 +107,28 @@ slidenumbers: true
 * “Our team is too small”
 * “We use Dropbox”
 
----
+^
+* Deployment uses it
+* Project tracking uses it
+* Everyone uses it
 
-# Recap 2
+---
 
 #ASTODO Only show database part
 
 ![inline](assets/anatomy_of_wordpress.pdf)
 
 ---
+[.autoscale: true]
 
-## We started using shared remote databases
+## We use **shared** remote databases
 ##  **mysql.mycompany.co.uk**
 
 This means all our **development** databases are accessible from anywhere.
+
+- No syncing
+- Content is shared between developers
+- Wordpress locking stops two people editing the same content at the same time
 
 ---
 
@@ -125,7 +140,7 @@ This means all our **development** databases are accessible from anywhere.
 
 ---
 
-## We store development asset on Amazon S3
+## We store development uploads on Amazon S3
 
 An S3 bucket per site, which is only accessible to the development team
 
@@ -143,37 +158,22 @@ An S3 bucket per site, which is only accessible to the development team
 
 ![inline](assets/composer.pdf)
 
-Composer pulls which even WordPress version is required (usually the latest) and all required plugins.
-# [fit] https://www.atomicsmash.co.uk/blog/using-composer-wordpress-development/
-
+Composer pulls a WordPress version (usually the latest) and all required plugins. [^2]
 
 ---
 
 ![inline](assets/repo-files.png)
 
-Git repository is clean of WordPress, plugins and uploads
-
-
----
-
-# Premium plugins
-
-We use an private composer storage solution called Release Belt.
-
-https://github.com/Rarst/release-belt
-
----
-
-![fit](assets/release-belt.png)
+Git repository doesn't include WordPress, plugins or uploads
 
 ---
 
 ## Our challenges
 
-* ~~Shared development environment~~ ✔
+* ~~Get a shared development environment~~ ✔
 * Improve frontend workflow
 * Find a reliable deployment method
-* Improve hosting reliability, level of control and performance
+* Improve hosting reliability
 
 ---
 
@@ -183,16 +183,16 @@ https://github.com/Rarst/release-belt
 
 ![original, 80%](assets/frontend-tech.pdf)
 
-More about frontend tools [^2]
+More about frontend tools [^3]
 
 ---
 
 ## Our challenges
 
-* ~~Shared development environment~~ ✔
+* ~~Get a shared development environment~~ ✔
 * ~~Improve frontend workflow~~ ✔
 * Find a reliable deployment method ✔
-* Improve hosting reliability, level of control and performance
+* Improve hosting reliability
 
 ---
 
@@ -226,10 +226,10 @@ More about frontend tools [^2]
 
 ## Our challenges
 
-* ~~Shared development environment~~ ✔
+* ~~Get a shared development environment~~ ✔
 * ~~Improve frontend workflow~~ ✔
 * ~~Find a reliable deployment method~~ ✔
-* Improve hosting reliability, level of control and performance
+* Improve hosting reliability
 
 ---
 
@@ -247,13 +247,13 @@ More about frontend tools [^2]
 
 # Forge...
 
-1. Creates the server on Digital Ocean
+1. It creates the server on Digital Ocean
 1. Installs Nginx, PHP, MySQL + a bunch of other stuff
-1. Helps automate Let's Encrypt SSLs
+1. Helps automate FREE Let's Encrypt SSLs (and normal SSLs)
 1. Provides an interface for creating 'sites'
 1. Provides an interface for creating databases
 1. Patches the servers for security updates (in the background)
-1. Still full control over your server
+1. Admin still has full control over the server
 
 ^ It's not a hosting cpanel
 
@@ -275,6 +275,20 @@ More about frontend tools [^2]
 
 ---
 
+#[fit] Think of your
+#[fit] Wordpress website,
+#[fit] as a web application.
+
+---
+
+#ASTODO add logos
+
+Logsmith
+
+Logflume
+
+---
+
 #[fit] Signup for logsmith
 
 #[fit] We are looking for beta testers
@@ -287,7 +301,41 @@ More about frontend tools [^2]
 
 ---
 
+You shouldn't need live content to build / test a website
+
+---
+
 ![fill autoplay loop](assets/automation.mp4)
+
+---
+
+#[fit] BONUS!
+
+---
+
+## Premium plugins with composer
+
+We use an private composer storage solution called Release Belt.
+
+https://github.com/Rarst/release-belt
+
+---
+
+![fit](assets/release-belt.png)
+
+---
+
+## Server metrics via Prometheus
+
+![inline](assets/prometheus_logo.pdf)
+
+---
+
+![fit](assets/prometheus.png)
+
+---
+
+![fit](assets/prometheus_single_server.png)
 
 ---
 
@@ -317,18 +365,8 @@ https://github.com/daviddarke/A-modern-WordPress-development-workflow
 
 ---
 
-### Think of your Wordpress website as a web application.
-
-You shouldn't need live content to build / test a website
-
----
-
-# GDPR
-
-If you are downloading content to a development machine from a live site, make sure you aren't pulling live user / customer data.
-
----
-
 [^1]: https://hackernoon.com/please-use-git-da3bea7d1234
 
-[^2]: https://www.atomicsmash.co.uk/blog/our-current-development-tools-and-workflows/
+[^2]: https://www.atomicsmash.co.uk/blog/using-composer-wordpress-development/
+
+[^3]: https://www.atomicsmash.co.uk/blog/our-current-development-tools-and-workflows/
