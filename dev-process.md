@@ -83,6 +83,8 @@ slidenumbers: true
 
 ---
 
+### Your theme code
+
 ![inline](assets/anatomy_of_wordpress_theme.pdf)
 
 ---
@@ -263,30 +265,9 @@ More about frontend tools [^3]
 
 ![original, fit](assets/new-dev-process.pdf)
 
-
----
-
-![fit, 140%](assets/logsmith_logflume.pdf)
-
----
-
-#[fit] Signup for logsmith
-
-#[fit] We are looking for beta testers
-
-#[fit] **http://eepurl.com/dkjmHb**
-
----
-
-![fill](assets/logsmith-signup2.png)
-
 ---
 
 ![fill autoplay loop](assets/automation.mp4)
-
----
-
-#[fit] BONUS!
 
 ---
 
@@ -316,6 +297,30 @@ https://github.com/Rarst/release-belt
 
 ---
 
+#[fit] BONUS!
+
+---
+
+![fit, 140%](assets/logsmith_logflume.pdf)
+
+---
+
+![fit, 140%](assets/logsmith_logflume_with_tech.pdf)
+
+---
+
+#[fit] Signup for logsmith
+
+#[fit] We are looking for beta testers
+
+#[fit] **http://eepurl.com/dkjmHb**
+
+---
+
+![fill](assets/logsmith-signup2.png)
+
+---
+
 # THANKS!
 
 Follow me:
@@ -339,8 +344,6 @@ https://github.com/daviddarke/A-modern-WordPress-development-workflow
 - Logflume | Gets uploads onto S3 so they are sharable with other developers
 - Logsmith | The development framework made by Atomic Smash
 - Release belt | Used for storing premium plugins and making them privately accessible to composer.
-
----
 
 [^1]: https://hackernoon.com/please-use-git-da3bea7d1234
 
