@@ -83,9 +83,7 @@ slidenumbers: true
 
 ---
 
-#ASTODO Only show theme part
-
-![inline](assets/anatomy_of_wordpress.pdf)
+![inline](assets/anatomy_of_wordpress_theme.pdf)
 
 ---
 
@@ -116,9 +114,7 @@ slidenumbers: true
 
 ---
 
-#ASTODO Only show database part
-
-![inline](assets/anatomy_of_wordpress.pdf)
+![inline](assets/anatomy_of_wordpress_database.pdf)
 
 ---
 [.autoscale: true]
@@ -134,11 +130,7 @@ This means all our **development** databases are accessible from anywhere.
 
 ---
 
-# Recap 3
-
-#ASTODO only show uploads
-
-![inline](assets/anatomy_of_wordpress.pdf)
+![inline](assets/anatomy_of_wordpress_assets.pdf)
 
 ---
 
@@ -150,11 +142,7 @@ An S3 bucket per site, which is only accessible to the development team
 
 ---
 
-# Recap 4
-
-#ASTODO Only show WordPress parts
-
-![inline](assets/anatomy_of_wordpress.pdf)
+![inline](assets/anatomy_of_wordpress_opensource.pdf)
 
 ---
 
@@ -179,7 +167,7 @@ Git repository doesn't include WordPress, plugins or uploads
 
 ---
 
-![original, 90%](assets/sass.pdf)
+![original, 140%](assets/sass.pdf)
 
 ---
 
@@ -237,7 +225,7 @@ More about frontend tools [^3]
 
 # [fit] The hosting company
 
-![original, 120%](assets/digital-ocean.pdf)
+![original, 320%](assets/digital-ocean.pdf)
 
 ---
 
@@ -273,12 +261,12 @@ More about frontend tools [^3]
 
 ### New dev process
 
-![inline](assets/new-dev-process.pdf)
+![original, fit](assets/new-dev-process.pdf)
 
 
 ---
 
-![fit, 160%](assets/logsmith_logflume.pdf)
+![fit, 140%](assets/logsmith_logflume.pdf)
 
 ---
 
