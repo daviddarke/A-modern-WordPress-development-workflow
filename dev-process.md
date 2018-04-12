@@ -50,7 +50,11 @@ slidenumbers: true
 * **Find a reliable deployment method** - Stop f**king about with FTP
 * **Improve hosting reliability** - Increase level of control and performance
 
-^ Mention the time difference
+^ Mention the time difference - 7 years
+
+---
+
+![fill autoplay loop](assets/automation.mp4)
 
 ---
 
@@ -77,7 +81,7 @@ slidenumbers: true
 
 ---
 
-### The anatomy of 99.9999% of WordPress Websites
+### The anatomy of 99% of WordPress Websites
 
 ![inline](assets/anatomy_of_wordpress.pdf)
 
@@ -91,6 +95,10 @@ slidenumbers: true
 
 ![inline, 180%](assets/git.pdf)
 
+
+---
+
+#[fit] Get your custom code into GIT...
 
 ---
 
