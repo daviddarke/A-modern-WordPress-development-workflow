@@ -46,15 +46,25 @@ slidenumbers: true
 ## Our challenges
 
 * **Get a shared development environment** - Hoping to increase development team
-* **Improve frontend workflow** - Stop editing CSS files
-* **Find a reliable deployment method** - Stop f**king about with FTP
+* **Improve frontend workflow** - Stop editing flat CSS files
+* **Find a reliable deployment method** - Stop f***ing about with FTP
 * **Improve hosting reliability** - Increase level of control and performance
+* **A future goal of...**
 
 ^ Mention the time difference - 7 years
 
 ---
 
-![fill autoplay loop](assets/automation.mp4)
+## Automated continuous delivery
+
+![inline autoplay loop](assets/automation.mp4)
+
+---
+
+#[fit] Think of your
+#[fit] WordPress website,
+#[fit] as a **web platform**.
+
 
 ---
 
@@ -72,12 +82,6 @@ slidenumbers: true
 ![inline](assets/computer_inside_computer.gif)
 
 ^ Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
-
----
-
-#[fit] Think of your
-#[fit] Wordpress website,
-#[fit] as a **web platform**.
 
 ---
 
