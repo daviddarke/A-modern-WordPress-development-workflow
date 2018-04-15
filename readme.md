@@ -8,8 +8,8 @@ The talk involves an overview of some key technologies like Git, Capistrano and 
 - How use premium WordPress plugins with Composer.
 
 
-## [Download PDF](https://github.com/daviddarke/getting-amped/raw/master/modern-wordpress-development.pdf)
-## [View markdown](https://github.com/daviddarke/getting-amped/blob/master/dev-process.md)
+## [View Slideshow](https://www.slideshare.net/DavidDarke/a-modern-wordpress-development-workflow/DavidDarke/a-modern-wordpress-development-workflow)
+## [View markdown](https://github.com/daviddarke/A-modern-WordPress-development-workflow/blob/master/dev-process.md)
 
 
 Icons and logos from
